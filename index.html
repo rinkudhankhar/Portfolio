@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> Rinku Kumari Dhankhar </title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            max-width: inherit;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+            max-width: inherit;
+        }
+
+        #t01 {
+            background-color: #b1cf5f;
+            margin: 10px 130px;
+            max-width: inherit;
+            display: inline;
+        }
+
+        #t02 {
+            background-color: #b1cf5f;
+            margin: 10px 130px;
+            max-width: inherit;
+        }
+
+        @keyframes example {
+            0% {
+                background-image: linear-gradient(to right, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a);
+            }
+
+            5% {
+                background-image: linear-gradient(to right, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f);
+            }
+
+            10% {
+                background-image: linear-gradient(to right, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e);
+            }
+
+            15% {
+                background-image: linear-gradient(to right, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c);
+            }
+
+            20% {
+                background-image: linear-gradient(to right, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a);
+            }
+
+            25% {
+                background-image: linear-gradient(to right, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656);
+            }
+
+            30% {
+                background-image: linear-gradient(to right, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f);
+            }
+
+            35% {
+                background-image: linear-gradient(to right, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b);
+            }
+
+            40% {
+                background-image: linear-gradient(to right, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248);
+            }
+
+            45% {
+                background-image: linear-gradient(to right, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44);
+            }
+
+            50% {
+                background-image: linear-gradient(to right, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541);
+            }
+
+            55% {
+                background-image: linear-gradient(to right, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e);
+            }
+
+            60% {
+                background-image: linear-gradient(to right, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c);
+            }
+
+            65% {
+                background-image: linear-gradient(to right, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38);
+            }
+
+            70% {
+                background-image: linear-gradient(to right, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30);
+            }
+
+            75% {
+                background-image: linear-gradient(to right, #2b512d, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d);
+            }
+
+            80% {
+                background-image: linear-gradient(to right, #466936, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d);
+            }
+
+            85% {
+                background-image: linear-gradient(to right, #648642, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936);
+            }
+
+            90% {
+                background-image: linear-gradient(to right, #86a750, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642);
+            }
+
+            95% {
+                background-image: linear-gradient(to right, #a3c25a, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750);
+            }
+
+            100% {
+                background-image: linear-gradient(to right, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a);
+            }
+        }
+
+        .akoo_scroll {
+            animation-duration: 1s !important;
+            animation-direction: alternate !important;
+            animation-name: example !important;
+            animation-iteration-count: 3 !important;
+            -webkit-animation-timing-function: linear !important;
+            animation-timing-function: linear !important;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            padding-top: 15px;
+            margin: 0px;
+            animation-duration: 0.8s;
+            animation-direction: alternate;
+            animation-name: example;
+            animation-iteration-count: 4;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .in-view {
+            opacity: 1;
+            -moz-transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -o-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        table {
+            opacity: 0;
+            -moz-transition: all 500ms linear;
+            -webkit-transition: all 500ms linear;
+            -o-transition: all 500ms linear;
+            transition: all 500ms linear;
+            -moz-transform: translate3d(-100px, 0px, 0px);
+            -webkit-transform: translate3d(-100px, 0px, 0px);
+            -o-transform: translate(-100px, 0px);
+            -ms-transform: translate(-100px, 0px);
+            transform: translate3d(-100px, 0px, 0px);
+            position: relative;
+        }
+
+        .body_color {
+            background-image: linear-gradient(to right, #b1cf5f, #aecd5e, #aac95c, #a3c25a, #99b656, #82a34f, #7b9b4b, #709248, #698b44, #638541, #5a7f3e, #52753c, #4a6d38, #345a30, #2d532d, #2b512d, #466936, #648642, #86a750, #a3c25a);
+        }
+    </style>
+</head>
+
+<body class="body_color">
+    <div style="background-color:#2b512ddd; margin:0px auto; max-width:1500px; border: solid 3px; position: -webkit-sticky; position: sticky; top: 0; z-index: 5; border-radius: 10px; overflow: hidden; backdrop-filter: blur(6px);">
+        <img src="photoRinku.jpg" width="195" height="210" style="float:right; padding-right: 10px">
+        <h1 style="text-align:center; color:#def4c6; font-family:Verdana"> Rinku Kumari <b style="font-size:100%">Dhankhar</b> </h1>
+        <h2 style="text-align:center; color:#def4c6"> <em>TechEnthusiast</em> </h2>
+        <h3 style="text-align: center; color:#def4c6; font-family: courier"> A young enhthusiastic programmer who likes to explore new technology and strives on each new day.<img src="programming.jpeg" width="50" height="50"></h3>
+      </div>
+      
+      <div style="color:#000000; margin:1px auto; padding: 5px 0px;  max-width:1500px; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;align-items: flex-start; align-content: flex-start; gap: 5px;">
+        <div style="background-color:#def4c6; padding: 10px ; border: solid 1px; border-radius: 5px; flex: 1 0 289px;">
+          <p>   
+            </p><div style="background-color:#73e2a7; color:#1b512d; border:solid 0px; text-align:center"><b>ABOUT</b></div>
+            Undergraduate<br>
+            Dept.of EE,<br>
+            <img src="Academic.png" width="15" height="15">Malaviya National Institute of Technology, Jaipur <br>
+            <img src="phone1.png" width="15" height="15"> +91-7976506275<br>
+            <img src="home1.png" width="15" height="15"> Jhunjhunu, Rajasthan, India<br>
+            <img src="Email.png" width="15" height="15"> <a href="mailto:rkumari@gap.com.com">rkumari@gap.com</a><br>
+  
+            <div style="background-color:#73e2a7; color:#1b512d; max-width:inherit; border:solid 0px; text-align: center"><b>LANGUAGES</b></div>
+            English<br>
+            Hindi<br>
+            Rajasthani<br>
+  
+            <div style="background-color:#73e2a7; color:#1b512d; max-width:inherit;  border:solid 0px; text-align:center"><b>SKILLS</b></div>
+            C, C++, MATLAB,<br>
+            HTML, CSS, JavaScript, jQuery, Bootstrap, React js, Node js<br>
+            SQL, Python<br>
+  
+            <br>
+            <div
+                style="background-color:#73e2a7; color:#1b512d; max-width:inherit; border:solid 0px; text-align:center">
+                <b>HOBBIES</b>
+            </div>
+            <img src="Drawing.png" width="16" height="15"> Drawing<br>
+            <img src="Reading.png" width="20" height="15"> Reading Books<br>
+            <img src="Hiking.png" width="23" height="15">Hiking<br>
+            <p></p>
+        </div>
+    </div>
+    <div style="background-color:#def4c6; border: solid 1px; border-radius: 5px; flex: 1 1 auto;">
+        <div style="background-color:#73e2a7; color:#1b512d; font-size:250%; text-align:center">
+            <img src="Academic.png" max-width="47" height="30"> <b>ACADEMIC PROFILE</b>
+        </div>
+        <div
+            style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;align-items: flex-start; align-content: flex-start;">
+            <div style="margin: 10px 10px 40px 150px; color:1B512D;  flex: 0 0 150px">
+                <p><b>
+                        Name<br>
+                        Roll<br>
+                        Programme<br>
+                        Discipline<br>
+                        Institute Name<br>
+                    </b>
+                </p>
+            </div>
+            <div style="margin: 10px auto 40px 10px; color:1B512D;   flex: 0 0 390px">
+                <p><b>
+                        : RINKU KUMARI<br>
+                        : 2018UEE1793<br>
+                        : Bachelor of Technology<br>
+                        : Electrical Engineering<br>
+                        : Malaviya National Institute of Technology Jaipur<br>
+                    </b>
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <div>
+            <table id="t02" class="in-view">
+                <caption><abbr
+                        title="Courses Included:-  EE101: Basic Electrical Engineering; CH101: Engineering Chemistry; CH151: Engineering Chemistry Laboratory; CE101: Engineering Drawing; HS101: English Language Skills; MA101: Mathematics-I; CE151: Engineering Drawing Laboratory; HS151: English Language Skills Laboratory; EE151: Basic Electrical Engineering Laboratory; ME101: Engineering Mechanics">Graduation</abbr>
+                </caption>
+                <tbody>
+                    <tr>
+                        <th colspan="3">Cumulative Semester Performance</th>
+                    </tr>
+                    <tr>
+                        <th>Earned Credits</th>
+                        <th>Earned Grade points</th>
+                        <th>CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>192</td>
+                        <td>189</td>
+                        <td>7.56</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table id="t02" class="in-view">
+                <caption><abbr
+                        title="Courses Included:-  EE101: Basic Electrical Engineering; CH101: Engineering Chemistry; CH151: Engineering Chemistry Laboratory; CE101: Engineering Drawing; HS101: English Language Skills; MA101: Mathematics-I; CE151: Engineering Drawing Laboratory; HS151: English Language Skills Laboratory; EE151: Basic Electrical Engineering Laboratory; ME101: Engineering Mechanics">Secondary
+                        School</abbr></caption>
+                <tbody>
+                    <tr>
+                        <th colspan="3">All over Performance</th>
+                    </tr>
+                    <tr>
+                        <th>CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>9.7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table id="t02" class="in-view">
+                <caption><abbr
+                        title="Courses Included:-  EE101: Basic Electrical Engineering; CH101: Engineering Chemistry; CH151: Engineering Chemistry Laboratory; CE101: Engineering Drawing; HS101: English Language Skills; MA101: Mathematics-I; CE151: Engineering Drawing Laboratory; HS151: English Language Skills Laboratory; EE151: Basic Electrical Engineering Laboratory; ME101: Engineering Mechanics">Secondary
+                        High School</abbr></caption>
+                <tbody>
+                    <tr>
+                        <th colspan="3">All over Performance</th>
+                    </tr>
+                    <tr>
+                        <th>CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>9.34</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div
+        style="color:#000000; margin:1px auto; padding: 5px 0px; max-width:1500px; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; align-content: flex-start; gap: 5px;">
+        <div style="background-color:#def4c6; padding: 10px; border: solid 1px; border-radius: 5px; flex: 1 1 auto;">
+            <h2>Work Experience</h2>
+            <ul>
+                <h1>Rinku Kumari Dhankhar</h1>
+                <h2>Web Developer | Information Security Engineer</h2>
+                <p>
+                    As a skilled Web Developer and Information Security Engineer, I bring a unique blend of
+                    expertise to the table.
+                    With a strong command of HTML, CSS, JavaScript, and other web development technologies,
+                    I
+                    have
+                    created captivating
+                    and seamless user experiences. Additionally, my proficiency in cloud identity and
+                    privileged
+                    access management has
+                    strengthened information security and reduced vulnerabilities.
+                </p>
+                <p>
+                    Throughout my career, I have achieved remarkable results, such as increasing user
+                    engagement
+                    by
+                    20% through web
+                    development initiatives and automating processes, resulting in a 30% reduction in manual
+                    efforts. I am known for
+                    my ability to proactively identify risks and deliver measurable impact.
+                </p>
+                <p>
+                    If you are looking for a highly skilled professional who can drive online success and
+                    ensure
+                    robust information
+                    security, I am the ideal candidate. Contact me today to discuss how I can contribute to
+                    your
+                    organization's growth
+                    and success.
+                </p>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var $animation_elements = $('table');
+        var $window = $(window);
+        function check_if_in_view() {
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = (window_top_position + window_height);
+
+            $.each($animation_elements, function () {
+                var $element = $(this);
+                var element_height = $element.outerHeight();
+                var element_top_position = $element.offset().top;
+                var element_bottom_position = (element_top_position + element_height);
+
+                //check to see if this current container is within viewport
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    $element.addClass('in-view');
+                } else {
+                    $element.removeClass('in-view');
+                }
+            });
+        }
+        $window.on('scroll', check_if_in_view);
+    </script>
+    </div>
+</body>
+
+</html>
